@@ -1,0 +1,189 @@
+<html>
+
+<head>
+    <title> School website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mnavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">St.xavier's School</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#campus_life">Campus life</a></li>
+                <li><a href="#achievments">Achievments</a></li>
+                <li><a href="#new">What's new</a></li>
+                <li><a href="#alumni">Alumni</a></li>
+                <li><a href="#contactUs">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="announcement">
+        <marquee id="marqueestyle" onmouseover="this.stop();" onmouseout="this.start();">
+            *** Feel free to ask queries on school@gmail.com ***
+        </marquee>
+    </div>
+
+    <img src="gettyimages-171306436-612x612.jpg">
+
+    <section id="#contactUs">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.7811699416093!2d72.83921531412511!3d19.16105385427444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b745d5b7c4bd%3A0xde2f38d642ffaf23!2sWhiteHatJr%20Mumbai!5e0!3m2!1sen!2sin!4v1625202558720!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <div class="container">
+        <div class="page-header" id="campus_life">
+            <h2 class="text-capitalizer">Campus life</h2>
+            <div class="row">
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="data:image/jpeg;base64,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">
+                    <h4 class="text-capitalizer"> <kbd> school church</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize"> was established in 1978</h5>
+                    <p class="text-muted text-left"> This is the church of the school</p>
+                </div>
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="https://www.nea.org/sites/default/files/styles/1200x630/public/legacy/2017/12/01_carroll_school_library-e1512575507152.jpg?itok=XwoA4XQk">
+                    <h4 class="text-capitalizer"> <kbd> School library</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize"> was established in 1978</h5>
+                    <p class="text-muted text-left"> This is the library of the school</p>
+                </div>
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="https://media.istockphoto.com/photos/theater-and-stage-picture-id146813516?k=6&m=146813516&s=612x612&w=0&h=WL-GsJCcQRYoIi_IWzPKanSgamAjrSCtvyxr4hgn-OU=">
+                    <h4 class="text-capitalizer"> <kbd> School auditorium</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize"> was established in 1978</h5>
+                    <p class="text-muted text-left"> This is the auditorium of the school</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-header" id="achievments">
+            <h2 class="text-capitalize">School achievments</h2>
+        </div>
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievments1">
+            Inter School debate on Envireonment pollution <i class="fa fa-sort-desc"></i>
+        </div>
+        <div id="school_acievments1" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievmentsID">
+                <img src="https://cdn.cdnparenting.com/articles/2018/08/503426038-H.jpg" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-success text-left text-capitalize"> won first prize in interschool debate on envireonment pollution</h5>
+                <p> The school won first prize in interschool debate on Envireonment pollution</p>
+            </div>
+        </div>
+
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="new">
+            <h2 class="text-capitalize">What's New</h2>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+                <h4> School canteen</h4>
+                <img src="https://thumbs.dreamstime.com/b/high-school-students-wearing-uniform-being-served-food-canteen-high-school-students-wearing-uniform-being-served-food-134207401.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">This is the school canteen where the children can eat the whatever they want.
+                </p>
+            </li>
+        </ul>
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="alumni">
+            <h2 class="text-capitalize">Our Alumni</h2>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" id="aluminist" data-toggle="modal" data-target="#school_alumni1">
+            <img src="download%20(5).jfif" class="img-responsive">
+            <hr>
+            <p class="text-primary">Aditya Thakeray</p>
+        </div>
+        <div class="modal fade" id="school_alumni1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Aditya Thakeray</h4>
+                    </div>
+                    <div id="footer">
+                        <div class="modal-body">
+                            <img src="download%20(5).jfif" class="img-responsive img_modal">
+                            <p class="p_modal">He is an Indian polititian serving as cabinet minister of tourismnand envireonment goverment of mahrashtra <br> <a href="https://en.wikipedia.org/wiki/Aaditya_Thackeray"><b>To know more</b></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" id="aluminist" data-toggle="modal" data-target="#school_alumni2">
+            <img src="200px-Vidya_Balan_promoting_Mission_Mangal.jpg" class="img-responsive">
+            <hr>
+            <p class="text-primary">Vidya Balan</p>
+        </div>
+        <div class="modal fade" id="school_alumni2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Vidya Balan</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="200px-Vidya_Balan_promoting_Mission_Mangal.jpg" class="img-responsive img_modal">
+                        <p class="p_modal">she is an Indian Actress <br> <a href="https://en.wikipedia.org/wiki/Vidya_Balan"><b>To know more</b></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" id="aluminist" data-toggle="modal" data-target="#school_alumni3">
+            <img src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=425,format=auto/sites/default/files/styles/768x768/public/d8/images/canvas/2021/05/26/9883b5c4-1532-49bb-9610-f17d28ce3036_3c85aea6.jpg?itok=pw-erjrM&v=1622005501" class="img-responsive">
+            <hr>
+            <p class="text-primary">Mukesh Ambani</p>
+        </div>
+        <div class="modal fade" id="school_alumni3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Mukesh Ambani</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=425,format=auto/sites/default/files/styles/768x768/public/d8/images/canvas/2021/05/26/9883b5c4-1532-49bb-9610-f17d28ce3036_3c85aea6.jpg?itok=pw-erjrM&v=1622005501" class="img-responsive img_modal">
+                        <p class="p_modal">He is the richest man of India <br> <a href="https://en.wikipedia.org/wiki/Mukesh_Ambani"><b>To know more</b></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" id="aluminist" data-toggle="modal" data-target="#school_alumni4">
+            <img src="https://jaipurliteraturefestival.org/uploads_jaipurlitfest/speakers/3136-rajdeep-sardesai.jpg" class="img-responsive">
+            <hr>
+            <p class="text-primary">Rajdeep Sardesi</p>
+        </div>
+        <div class="modal fade" id="school_alumni4">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Rajdeep Sardesi</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://jaipurliteraturefestival.org/uploads_jaipurlitfest/speakers/3136-rajdeep-sardesai.jpg" class="img-responsive img_modal">
+                        <p class="p_modal">He is a news actor <br> <a href="https://en.wikipedia.org/wiki/Rajdeep_Sardesai"><b>To know more</b></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <div id="footer"></div>
+
+</body>
+
+</html>
